@@ -1,0 +1,29 @@
+.result-div::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.result-div::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.result-div::-webkit-scrollbar-thumb{
+    background-color: #8313DD;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+/* body::-webkit-scrollbar {
+    width: 1.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(199, 194, 194);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+} */
