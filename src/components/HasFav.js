@@ -11,6 +11,8 @@ const HasFav = () => {
     const favdata = useSelector((state) => state.npm.fav)
     const [model, setModel] = useState(false);
     const [delnpm, setDelNpm] = useState();
+    
+
     localStorage.setItem("fav",JSON.stringify(favdata))
     const dispatch = useDispatch()
     useEffect(()=>{

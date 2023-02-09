@@ -3,18 +3,12 @@ import Button from './Button'
 import { useSelector , useDispatch} from 'react-redux'
 import HasFav from './HasFav'
 import { getData } from '../store/npmslice'
-// import { npmActions } from "../store/npmslice";
 
 const Home = () => {
 
 const dispatch = useDispatch()
-const favdata = JSON.parse(localStorage.getItem("fav"))
-    console.log(favdata);
-// if(favdata){
-//    dispatch(npmActions.addFav(favdata))
-// }
-
     const fav = useSelector((state) => state.npm.fav)
+    
     useEffect(()=>{
         dispatch(getData())
     },[dispatch,fav])

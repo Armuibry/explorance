@@ -1,11 +1,11 @@
 import React from "react";
-import { Routes, Route, json } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import AddToFav from "./components/AddToFav";
 import Home from "./components/Home";
 import './Custom.css'
 
 function App() {
-
+   
    return (
       <div className="App">
          
